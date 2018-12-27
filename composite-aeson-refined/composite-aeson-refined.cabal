@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.31.0.
+-- This file has been generated from package.yaml by hpack version 0.31.1.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a61486d28933012d285084ce32b7c5b064e687752c1672322ee9b4658d50b0e1
+-- hash: cca6ccb34f25cee9dbac0f17b45df2d868702f4cf2ccfaac7332d3fda9ef02b6
 
 name:           composite-aeson-refined
 version:        0.5.5.0
@@ -24,11 +24,11 @@ library
   default-extensions: DataKinds FlexibleContexts FlexibleInstances GeneralizedNewtypeDeriving LambdaCase MultiParamTypeClasses MultiWayIf OverloadedStrings PatternSynonyms PolyKinds QuasiQuotes RankNTypes ScopedTypeVariables StandaloneDeriving StrictData TemplateHaskell TupleSections TypeFamilies TypeOperators ViewPatterns
   ghc-options: -Wall -O2
   build-depends:
-      aeson-better-errors >=0.9.1.0 && <0.10
-    , base >=4.7 && <5
-    , composite-aeson >=0.5.3.0 && <0.6
-    , mtl >=2.2.1 && <2.3
-    , refined >=0.1.2.1 && <0.3
+      aeson-better-errors
+    , base
+    , composite-aeson
+    , mtl
+    , refined
   exposed-modules:
       Composite.Aeson.Refined
   other-modules:

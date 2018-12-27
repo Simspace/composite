@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.31.0.
+-- This file has been generated from package.yaml by hpack version 0.31.1.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: ce20790d4c15e34872d0f1a00b39e6fb0773d027febd102e2b116642143f34d6
+-- hash: 677b5cdabffe0aa8611b079784ceb3aaba508503f8a3ad5e953c0a81b6994763
 
 name:           composite-swagger
 version:        0.5.5.0
@@ -24,14 +24,14 @@ library
   default-extensions: DataKinds FlexibleContexts FlexibleInstances GeneralizedNewtypeDeriving MultiParamTypeClasses OverloadedStrings PolyKinds ScopedTypeVariables StandaloneDeriving StrictData TemplateHaskell TupleSections TypeFamilies TypeOperators ViewPatterns
   ghc-options: -Wall -O2
   build-depends:
-      base >=4.7 && <5
-    , composite-base >=0.5.3.0 && <0.6
-    , insert-ordered-containers >=0.2.1.0 && <0.3
-    , lens >=4.15.4 && <4.17
-    , swagger2 >=2.1.6 && <2.3
-    , template-haskell >=2.11.1.0 && <2.14
-    , text >=1.2.2.2 && <1.3
-    , vinyl >=0.5.3 && <0.9
+      base
+    , composite-base
+    , insert-ordered-containers
+    , lens
+    , swagger2
+    , template-haskell
+    , text
+    , vinyl
   exposed-modules:
       Composite.Swagger
       Composite.Swagger.Base
@@ -50,17 +50,17 @@ test-suite composite-swagger-test
   ghc-options: -Wall -O2 -threaded -rtsopts -with-rtsopts=-N -fno-warn-orphans
   build-depends:
       QuickCheck
-    , base >=4.7 && <5
+    , base
     , composite-aeson
     , composite-base
     , composite-swagger
     , hspec
-    , insert-ordered-containers >=0.2.1.0 && <0.3
-    , lens >=4.15.4 && <4.17
-    , swagger2 >=2.1.6 && <2.3
-    , template-haskell >=2.11.1.0 && <2.14
-    , text >=1.2.2.2 && <1.3
-    , vinyl >=0.5.3 && <0.9
+    , insert-ordered-containers
+    , lens
+    , swagger2
+    , template-haskell
+    , text
+    , vinyl
   other-modules:
       THSpec
       Paths_composite_swagger

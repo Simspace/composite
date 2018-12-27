@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.31.0.
+-- This file has been generated from package.yaml by hpack version 0.31.1.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a165e49742efd61caf8c673211c5e9f70c4b579833740ea594949012cfff973b
+-- hash: 71c3f9a05607725089f79c14e0f85e6b028af96fe98cf83cb20aab0dc2c7862d
 
 name:           composite-opaleye
 version:        0.5.5.0
@@ -24,17 +24,17 @@ library
   default-extensions: DataKinds FlexibleContexts FlexibleInstances LambdaCase MultiParamTypeClasses OverloadedStrings PatternSynonyms PolyKinds ScopedTypeVariables StrictData TemplateHaskell TypeFamilies TypeOperators ViewPatterns
   ghc-options: -Wall -O2
   build-depends:
-      base >=4.7 && <5
-    , bytestring >=0.10.8.1 && <0.11
-    , composite-base >=0.5.3.0 && <0.6
-    , lens >=4.15.4 && <4.17
-    , opaleye >=0.5.4.0 && <0.7
-    , postgresql-simple >=0.5.3.0 && <0.6
-    , product-profunctors >=0.8.0.3 && <0.11
-    , profunctors >=5.2.1 && <5.3
-    , template-haskell >=2.11.1.0 && <2.14
-    , text >=1.2.2.2 && <1.3
-    , vinyl >=0.5.3 && <0.9
+      base
+    , bytestring
+    , composite-base
+    , lens
+    , opaleye
+    , postgresql-simple
+    , product-profunctors
+    , profunctors
+    , template-haskell
+    , text
+    , vinyl
   exposed-modules:
       Composite.Opaleye
       Composite.Opaleye.ProductProfunctors
@@ -55,19 +55,19 @@ test-suite composite-opaleye-test
   ghc-options: -Wall -O2 -threaded -rtsopts -with-rtsopts=-N -fno-warn-orphans
   build-depends:
       QuickCheck
-    , base >=4.7 && <5
-    , bytestring >=0.10.8.1 && <0.11
-    , composite-base >=0.5.3.0 && <0.6
+    , base
+    , bytestring
+    , composite-base
     , composite-opaleye
     , hspec
-    , lens >=4.15.4 && <4.17
-    , opaleye >=0.5.4.0 && <0.7
-    , postgresql-simple >=0.5.3.0 && <0.6
-    , product-profunctors >=0.8.0.3 && <0.11
-    , profunctors >=5.2.1 && <5.3
-    , template-haskell >=2.11.1.0 && <2.14
-    , text >=1.2.2.2 && <1.3
-    , vinyl >=0.5.3 && <0.9
+    , lens
+    , opaleye
+    , postgresql-simple
+    , product-profunctors
+    , profunctors
+    , template-haskell
+    , text
+    , vinyl
   other-modules:
       UpdateSpec
       Paths_composite_opaleye
