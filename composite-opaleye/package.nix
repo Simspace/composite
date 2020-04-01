@@ -4,7 +4,7 @@
 }:
 mkDerivation {
   pname = "composite-opaleye";
-  version = "0.5.5.0";
+  version = "0.7.1.0";
   src = ./.;
   libraryHaskellDepends = [
     base bytestring composite-base lens opaleye postgresql-simple
@@ -16,8 +16,8 @@ mkDerivation {
     product-profunctors profunctors QuickCheck template-haskell text
     vinyl
   ];
-  preConfigure = "hpack";
-  homepage = "https://github.com/ConferHealth/composite#readme";
-  description = "Opaleye SQL for Frames records";
+  prePatch = "hpack";
+  homepage = "https://github.com/ConferOpenSource/composite#readme";
+  description = "Opaleye SQL for Vinyl records";
   license = stdenv.lib.licenses.bsd3;
 }

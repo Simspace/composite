@@ -3,14 +3,14 @@
 }:
 mkDerivation {
   pname = "composite-ekg";
-  version = "0.5.5.0";
+  version = "0.7.1.0";
   src = ./.;
   libraryHaskellDepends = [
     base composite-base ekg-core lens text vinyl
   ];
   libraryToolDepends = [ hpack ];
-  preConfigure = "hpack";
-  homepage = "https://github.com/ConferHealth/composite#readme";
-  description = "EKG Metrics for Vinyl/Frames records";
+  prePatch = "hpack";
+  homepage = "https://github.com/ConferOpenSource/composite#readme";
+  description = "EKG Metrics for Vinyl records";
   license = stdenv.lib.licenses.bsd3;
 }

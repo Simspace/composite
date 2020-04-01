@@ -31,11 +31,11 @@ aliceJson = toJsonWithFormat userFormat alice
 
 ### `composite-base`
 
-Definitions shared by the other composite libraries or generally useful when using Vinyl/Frames records.
+Definitions shared by the other composite libraries or generally useful when using Vinyl records.
 
 ### `composite-opaleye`
 
-`composite-opaleye` provides the necessary instances to use a Frames record with the [opaleye](https://github.com/tomjaguarpaw/haskell-opaleye) library, letting you use records for query expressions as well as result rows.
+`composite-opaleye` provides the necessary instances to use a Vinyl record with the [opaleye](https://github.com/tomjaguarpaw/haskell-opaleye) library, letting you use records for query expressions as well as result rows.
 
 Example:
 
@@ -88,8 +88,3 @@ As of writing, we use these libraries in all our Haskell projects internally and
 ## Contributing
 
 Contributions and feedback welcome! File an issue or make a PR.
-
-## Chat
-
-Asa (@asa) and Ross (@dridus) lurk on [fpchat](https://fpchat.com). You can also reach us at `oss@confer.health`.
-

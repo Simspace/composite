@@ -6,7 +6,7 @@
 }:
 mkDerivation {
   pname = "composite-aeson";
-  version = "0.5.5.0";
+  version = "0.7.1.0";
   src = ./.;
   libraryHaskellDepends = [
     aeson aeson-better-errors base composite-base containers
@@ -21,8 +21,8 @@ mkDerivation {
     profunctors QuickCheck scientific tagged template-haskell text time
     unordered-containers vector vinyl
   ];
-  preConfigure = "hpack";
-  homepage = "https://github.com/ConferHealth/composite#readme";
-  description = "JSON for Vinyl/Frames records";
+  prePatch = "hpack";
+  homepage = "https://github.com/ConferOpenSource/composite#readme";
+  description = "JSON for Vinyl records";
   license = stdenv.lib.licenses.bsd3;
 }

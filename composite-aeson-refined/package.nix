@@ -3,14 +3,14 @@
 }:
 mkDerivation {
   pname = "composite-aeson-refined";
-  version = "0.5.5.0";
+  version = "0.7.1.0";
   src = ./.;
   libraryHaskellDepends = [
     aeson-better-errors base composite-aeson mtl refined
   ];
   libraryToolDepends = [ hpack ];
-  preConfigure = "hpack";
-  homepage = "https://github.com/ConferHealth/composite#readme";
+  prePatch = "hpack";
+  homepage = "https://github.com/ConferOpenSource/composite#readme";
   description = "composite-aeson support for Refined from the refined package";
   license = stdenv.lib.licenses.bsd3;
 }

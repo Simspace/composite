@@ -4,7 +4,7 @@
 }:
 mkDerivation {
   pname = "composite-base";
-  version = "0.5.5.0";
+  version = "0.7.1.0";
   src = ./.;
   libraryHaskellDepends = [
     base exceptions lens monad-control mtl profunctors template-haskell
@@ -16,8 +16,8 @@ mkDerivation {
     template-haskell text transformers transformers-base unliftio-core
     vinyl
   ];
-  preConfigure = "hpack";
-  homepage = "https://github.com/ConferHealth/composite#readme";
+  prePatch = "hpack";
+  homepage = "https://github.com/ConferOpenSource/composite#readme";
   description = "Shared utilities for composite-* packages";
   license = stdenv.lib.licenses.bsd3;
 }

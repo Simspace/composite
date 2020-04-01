@@ -4,7 +4,7 @@
 }:
 mkDerivation {
   pname = "composite-swagger";
-  version = "0.5.5.0";
+  version = "0.7.1.0";
   src = ./.;
   libraryHaskellDepends = [
     base composite-base insert-ordered-containers lens swagger2
@@ -15,8 +15,8 @@ mkDerivation {
     base composite-aeson composite-base hspec insert-ordered-containers
     lens QuickCheck swagger2 template-haskell text vinyl
   ];
-  preConfigure = "hpack";
-  homepage = "https://github.com/ConferHealth/composite#readme";
-  description = "Swagger for Vinyl/Frames records";
+  prePatch = "hpack";
+  homepage = "https://github.com/ConferOpenSource/composite#readme";
+  description = "Swagger for Vinyl records";
   license = stdenv.lib.licenses.bsd3;
 }
