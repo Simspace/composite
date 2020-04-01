@@ -152,8 +152,6 @@ instance Monad m => Monad (ContextT c m) where
     a <- runContextT clt ctx
     runContextT (k a) ctx
 
-  fail = ContextT . const . fail
-
 instance MonadIO m => MonadIO (ContextT c m) where
   liftIO = lift . liftIO
 
